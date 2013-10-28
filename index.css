@@ -1,0 +1,10 @@
+
+/**
+ * Typekit.
+ *
+ * html(.wf-loading)(.wf-inactive)
+ */
+
+.wf-loading {
+  visibility: hidden;
+}

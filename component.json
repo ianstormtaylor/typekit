@@ -1,0 +1,14 @@
+{
+  "name": "typekit",
+  "repo": "ianstormtaylor/typekit",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Load a Typekit package asynchronously.",
+  "keywords": ["type", "kit", "font", "typekit", "async", "typeface"],
+  "dependencies": {
+    "component/classes": "*",
+    "segmentio/load-script": "*"
+  },
+  "scripts": ["index.js"],
+  "styles": ["index.css"]
+}
