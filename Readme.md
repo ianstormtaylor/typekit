@@ -1,45 +1,27 @@
-# bind
+# typekit
   
-  A clear API for function binding helpers.
+  Load a Typekit kit asynchronously, automatically handling FOUT.
 
 ## Installation
 
-    $ component install ianstormtaylor/bind
-    $ npm install ianstormtaylor/bind
+    $ component install ianstormtaylor/typekit
 
 ## Example
 
 ```js
-var bind = require('bind');
-
-var object = {
-  one: function(){},
-  two: function(){}
-};
-
-// bind a single method
-object.one = bind(object, object.one);
-
-// bind certain methods
-bind.methods(object, 'one', 'two');
-
-// bind all methods
-bind.all(object);
+var typekit = require('typekit');
+typekit('yzu2jpo');
 ```
 
 ## API
 
-### bind(object, function)
+### typekit(id, options)
 
-  Bind a `function` to always be called with the `object` as context.
+  Load a kit with `id` and optional `options`:
 
-### bind.all(object)
-  
-  Bind all methods on an `object` to always be called with the `object` as context.
-
-### bind.methods(object, methods...)
-
-  Bind certain `methods` on `object` to always be called with the `object` as context.
+    {
+      timeout: 3000
+    }
 
 ## License
 

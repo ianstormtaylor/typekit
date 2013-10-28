@@ -3,12 +3,13 @@
   "repo": "ianstormtaylor/typekit",
   "license": "MIT",
   "version": "0.0.1",
-  "description": "Load a Typekit package asynchronously.",
+  "description": "Load a Typekit kit asynchronously, automatically handling FOUT.",
   "keywords": ["type", "kit", "font", "typekit", "async", "typeface"],
   "dependencies": {
     "component/classes": "*",
     "segmentio/load-script": "*"
   },
-  "scripts": ["index.js"],
-  "styles": ["index.css"]
+  "scripts": ["lib/index.js"],
+  "styles": ["lib/index.css"],
+  "main": "lib/index.js"
 }
